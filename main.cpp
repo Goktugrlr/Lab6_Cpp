@@ -21,14 +21,14 @@ double summation(int n){
 double summation(){
     result = 0;   //I have to re-define them because their values changed already after summation(n)
     k = 1;
-    int number;
+    int n;
     while(true){
         cout<<"Please enter a variable for summation as a constraint:";
-        cin>>number;
-        if (number<1){
+        cin>>n;
+        if (n<1){
             cout<<"Summation step is starting from 1. You should enter 1 or higher!"<<endl;
         } else{
-            return summation(number);
+            return summation(n);
         }
     }
 }
